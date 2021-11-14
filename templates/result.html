@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Invoice</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <table class="table table-bordered">
+            <tr> 
+                <th> Invoice Number: </th>
+                <td colspan=3>001</td>
+            </tr>
+            <tr>
+                <th> Invoice Date: </th>
+                <td>20/6/2021</td>
+            </tr>
+            <tr>
+                <th colspan=2> Seller</th>
+                <th colspan=2> Customer</th>
+            </tr>
+            <tr>
+                <td > Seller Name </td>
+                <td>{{sn}}</td>
+                <td > Customer Name</td>
+                <td>{{cn}}</td>
+            </tr>
+            <tr>
+                <td > Seller Address</td>
+                <td>{{sa}}</td>
+                <td > Customer Address</td>
+                <td>{{ca}}</td>
+            </tr>
+            <tr>
+                <td > Seller Phone</td>
+                <td>{{sp}}</td>
+                <td > Customer Phone</td>
+                <td>{{cp}}</td>
+            </tr>
+            <tr>
+                <th> SNo</th>
+                <th> Product</th>
+                <th> Quantity</th>
+                <th> Amount</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> {{i1}}</td>
+                <td> {{q1}}</td>
+                <td> {{a1}}</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> {{i2}}</td>
+                <td> {{q2}}</td>
+                <td> {{a2}}</td>
+            </tr>
+            <tr>
+                <td colspan=3>Grand Total</td>
+                <td>{{q1}}*{{a1}}+{{q2}}*{{a2}}</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,6 +1,7 @@
 from django import forms
 
 class Details(forms.Form):
+    id=forms.IntegerField(label='Id', required=True)
     sname=forms.CharField(label='Seller Name', required=True)
     sphone=forms.IntegerField(label='Seller Phone', required=True)
     saddress=forms.CharField(label='Seller Address', required=True)
@@ -13,4 +14,5 @@ class Details(forms.Form):
     item2=forms.CharField(label='Item 2', required=True)
     quantity2=forms.CharField(label='Quantity 2', required=True)
     price2=forms.CharField(label='Price 2', required=True)
+    date=forms.DateField(label='Today\'s Date', required=True)
     
